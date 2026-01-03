@@ -22,12 +22,11 @@ build {
     "source.amazon-ebs.rhel9_ansible"
   ]
 
-  # provisioner "shell" {
-  #   inline = [
-  #     "sudo pip3.11 install ansible hvac",
-  #     "ansible-pull -i localhost, -U https://github.com/raghudevopsb85/roboshop-packer-images.git main.yml"
-  #   ]
-  # }
+  provisioner "shell" {
+    inline = [
+      "sudo pip3.11 install ansible hvac"]
+      # "ansible-pull -i localhost, -U https://github.com/raghudevopsb85/roboshop-packer-images.git main.yml"
+  }
 
 }
 
